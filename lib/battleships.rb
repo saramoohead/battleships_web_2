@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'byebug'
 
 class BattleShips < Sinatra::Base
   get '/' do
@@ -10,6 +11,7 @@ class BattleShips < Sinatra::Base
   end
 
   post '/new_game' do
+    puts params.inspect
     @name = params[:name]
     erb :new_game
   end

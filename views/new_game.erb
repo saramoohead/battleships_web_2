@@ -2,9 +2,18 @@
 
 <form action='/new_game' method='post'>
   <input type='text' name='name'>
-  <button type='submit' value='register'>
+  <input type='submit' value='register'>
 </form>
 
-<% if @name %>
-<h2>Welcome, <%= @name %>.</h2>
+<% if @name == "" %>
+  <% @name = "Player 1" %>
+  <h2>Welcome, <%= @name %>.</h2>
+<% elsif @name %>
+  <h2>Welcome, <%= @name %>.</h2>
 <% end %>
+
+
+
+
+
+

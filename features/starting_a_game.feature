@@ -13,3 +13,9 @@ Feature: Can play battleships online
     When I type in my "name" with "Max"
     And I click "register"
     Then I should see "Welcome, Max."
+
+  Scenario: Registering anonymously
+    Given I have started a new game
+    When I type in my "name" with ""
+    And I click "register"
+    Then I should see "Welcome, Player 1."
