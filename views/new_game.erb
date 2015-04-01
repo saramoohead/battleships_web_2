@@ -1,7 +1,29 @@
-
+<style>
+table, th, td {
+border-style: solid; border-color: #9f9f9f;
+border-spacing: 4px;
+}
+</style>
 <% if @name == "" %>
   <% @name = "Player 1" %>
   <h2>Welcome, <%= @name %>.</h2>
 <% elsif @name %>
   <h2>Welcome, <%= @name %>.</h2>
 <% end %>
+
+<table>
+  <tr>
+    <th></th>
+    <th>A</th>
+    <th>B</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>x</th>
+    <th>x</th>
+  </tr>
+  <tr>
+    <th>2</th>
+    <th>x</th>
+    <th>x</th>
+</table>
