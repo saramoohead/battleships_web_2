@@ -17,7 +17,8 @@ Feature: Can play battleships online
 
   Scenario: Starting a game
     Given I have finished registering for a new game
-    When I click "Start game"
     Then I should see my battleship board.
+
+
 
 

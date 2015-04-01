@@ -19,7 +19,7 @@ Given(/^I have finished registering for a new game$/) do
 end
 
 Then(/^I should see my battleship board\.$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_css('table')
 end
 
 
