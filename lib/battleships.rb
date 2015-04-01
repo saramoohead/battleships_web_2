@@ -16,6 +16,10 @@ class BattleShips < Sinatra::Base
     erb :new_game
   end
 
+  get '/new_board' do
+    erb :new_game
+  end
+
 
 set :views, Proc.new { File.join(root, '..', 'views') }
   # start the server if ruby file executed directly
